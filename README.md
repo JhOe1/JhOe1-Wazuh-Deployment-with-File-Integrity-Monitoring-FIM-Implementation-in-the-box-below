@@ -24,7 +24,9 @@ Wazuh helps organizations and individuals to protect their data assets against s
 ### Step 1: Installing Wazuh
 
 First, I downloaded and ran the Wazuh installation assistant using the commands on the wazuh web page
+
 "curl -sO https://packages.wazuh.com/4.9/wazuh-install.sh && sudo bash ./wazuh-install.sh -a"
+
 Once the assistant finishes the installation, it  shows the access credentials and a message confirming that the installation was successful.
 
 
