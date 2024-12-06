@@ -32,7 +32,7 @@ Once the assistant finishes the installation, it  shows the access credentials a
 
 
 
-Then I used the Wazuh dashboard using the IP address of the host machine  https://<wazuh-dashboard-ip> and inpp credentials:
+Then I accessed the Wazuh dashboard using the IP address of the host machine  https://<wazuh-dashboard-ip> and inpp credentials:
 
 Username: admin
 
@@ -44,30 +44,6 @@ Password: <ADMIN_PASSWORD>
 
 
 ### Step 2: Setting up Cloud Infrastructure
-- Deployed the infrastructure on **Vultr**, with all virtual machines (VMs) connected within a **Virtual Private Cloud (VPC)**.
-  - Used a **private IP range** of `172.31.x.x/24` for secure server connections.
-  - Added an **internet gateway** to facilitate traffic routing between the internet and the VPC.
-
-### Step 3: Connecting Components
-- Configured connections between servers to define data flow:
-  - Logs from the Windows and Ubuntu servers are forwarded to the ELK stack through the **Fleet Server**.
-  - Security alerts from the ELK stack are sent to the **OS Ticket Server**.
-  - Simulated attack scenarios with roles for **SOC Analyst Laptop** and **Attacker Machine**.
-
-### Key Technologies:
-- **Cloud Provider**: Vultr (for VM deployment).
-- **Elastic & Kibana**: For log aggregation and visualization.
-- **Fleet Server**: Manages Elastic agents.
-- **Sysmon**: Installed on the Windows server for detailed log generation.
-- **Command & Control Server**: Using Mythic for attack simulations.
-
-## Diagram
-Here’s the network architecture diagram illustrating the  setup and their connections:
-
-![network-architecture](https://github.com/user-attachments/assets/1ba85fda-137a-43e2-94ee-059245a4751d)
-
-
-![network-architecture2](https://github.com/user-attachments/assets/c70fee67-0536-4acd-b7cf-93fe1f45826e)
 
 
 
