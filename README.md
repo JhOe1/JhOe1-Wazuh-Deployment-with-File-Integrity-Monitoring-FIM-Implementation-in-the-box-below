@@ -5,7 +5,7 @@
 
 
 ## Wazuh Deployment with File Integrity Monitoring (FIM) Implementation
-In this project I will install wazuh on my Ubuntu desktop, focusing on implementing the File Integrity Monitoring (FIM) module. FIM is crucial in detecting unauthorized modifications to critical files, helping to prevent malicious activities. Everything was done in my virtual lab using VMware.
+In this project I will install wazuh on my Ubuntu desktop, focusing on implementing the File Integrity Monitoring (FIM) module. FIM is crucial in detecting unauthorized modifications to critical files, helping to prevent malicious activities. Everything was done in my virtual lab using Virtual Box.
 
 The steps include:
 - Installing Wazuh using the Install guide on the wazuh website.
