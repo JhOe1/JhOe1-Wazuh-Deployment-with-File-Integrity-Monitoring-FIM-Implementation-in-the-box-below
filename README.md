@@ -28,7 +28,7 @@ First, I downloaded and ran the Wazuh installation assistant using the commands 
 "curl -sO https://packages.wazuh.com/4.9/wazuh-install.sh && sudo bash ./wazuh-install.sh -a"
 
 Once the assistant finishes the installation, it shows the access credentials and a message confirming that the installation was successful.
-
+<img width="934" alt="wazuh installation" src="https://github.com/user-attachments/assets/c1db0daa-7ff4-48c0-a15f-c6a41e76916f">
 
 
 
@@ -39,8 +39,11 @@ Username: admin
 Password: <ADMIN_PASSWORD>
 
 
+I also deployed the wazuh agent on a Windows 10 machine
 
+<img width="1680" alt="agent" src="https://github.com/user-attachments/assets/6e227d4a-1bf4-4b41-8a95-b80ddffea85b">
 
+<img width="1680" alt="wazuh home" src="https://github.com/user-attachments/assets/86295337-bbe7-4b23-b96e-615bf08fda7b">
 
 
 ### Step 2: Setting up Cloud Infrastructure
