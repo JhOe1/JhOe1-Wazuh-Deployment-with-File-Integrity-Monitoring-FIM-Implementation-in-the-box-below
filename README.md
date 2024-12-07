@@ -27,7 +27,7 @@ First, I downloaded and ran the Wazuh installation assistant using the commands 
 
 "curl -sO https://packages.wazuh.com/4.9/wazuh-install.sh && sudo bash ./wazuh-install.sh -a"
 
-Once the assistant finishes the installation, it  shows the access credentials and a message confirming that the installation was successful.
+Once the assistant finishes the installation, it shows the access credentials and a message confirming that the installation was successful.
 
 
 
