@@ -49,7 +49,7 @@ I also deployed the wazuh agent on a Windows 10 machine
 ### Step 2: Editing the Ossec.conf file on the agent
 
 To get the File Integrity Monitoring (FIM) running on Windows 10, I had to modify the ossec.conf file, which is the configuration file for the Wazuh agent. Before editing the ossec.conf file, I created a backup copy of it.
-# Reason: This is a best practice when working with configuration files. It allows you to revert to the original configuration if the changes cause issues.
+### Reason: This is a best practice when working with configuration files. It allows you to revert to the original configuration if the changes cause issues.
 
 To fine-tune the File Integrity Monitoring (FIM) settings, I updated the scan frequency in the ossec.conf file from 12 hours (default) to 10 seconds. This ensures more frequent checks for file modifications, allowing logs to be generated every 10 seconds for any changes.
 <img width="1025" alt="Screenshot 2024-12-07 at 11 58 57" src="https://github.com/user-attachments/assets/12951cb5-b1f9-4f46-9de4-bcea1cb942b6">
@@ -62,9 +62,13 @@ I saved the file and restarted the service.
 <img width="1021" alt="Screenshot 2024-12-07 at 12 06 18" src="https://github.com/user-attachments/assets/d4dda85d-2100-46d0-b607-7fef6038340d">
 
 
-For this experiment i create a text file name "Evil malware" in the "C:\Users\Public\Download" Directory 
+For this experiment, I will create a text file named "Evil malware" in the "C:\Users\Public\Download" Directory and see if wazuh was able to detect it
 
-
+<img width="1680" alt="Screenshot 2024-12-07 at 12 29 12" src="https://github.com/user-attachments/assets/669967e2-fb15-4d43-9a60-a774fa0f467b">
+<br><br>
+<img width="1676" alt="Screenshot 2024-12-07 at 12 32 47" src="https://github.com/user-attachments/assets/e2bcd792-b9cd-425d-b05b-3445ee48840f">
+<br><br>
+<img width="1680" alt="Screenshot 2024-12-07 at 12 36 41" src="https://github.com/user-attachments/assets/490afef2-b636-4ffb-b9ca-d44da1ecbf25">
 ## Outcome
 - Successfully designed and documented the network architecture, laying the groundwork for the ELK Stack setup and subsequent security monitoring.
 
