@@ -70,7 +70,7 @@ For this experiment, I will create a text file named "Evil malware" in the "C:\U
 <br><br>
 <img width="1680" alt="Screenshot 2024-12-07 at 12 36 41" src="https://github.com/user-attachments/assets/490afef2-b636-4ffb-b9ca-d44da1ecbf25">
 
-#### expected Wazuh was able to detect file creation 
+#### As expected Wazuh was able to detect file creation 
 Wazuh’s ability to generate file hashes is a powerful feature for file integrity verification. By cross-referencing these hashes on platforms like VirusTotal, we can determine if a file is malicious. This feature enhances incident detection and supports quicker remediation by linking potential threats to known malware signatures.
 
 I also modified the Evil malware file and then deleted it both actions were logged by wazuh 
