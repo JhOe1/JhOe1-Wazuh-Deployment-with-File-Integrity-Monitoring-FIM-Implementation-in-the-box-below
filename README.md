@@ -69,12 +69,27 @@ For this experiment, I will create a text file named "Evil malware" in the "C:\U
 <img width="1676" alt="Screenshot 2024-12-07 at 12 32 47" src="https://github.com/user-attachments/assets/e2bcd792-b9cd-425d-b05b-3445ee48840f">
 <br><br>
 <img width="1680" alt="Screenshot 2024-12-07 at 12 36 41" src="https://github.com/user-attachments/assets/490afef2-b636-4ffb-b9ca-d44da1ecbf25">
-## Outcome
-- Successfully designed and documented the network architecture, laying the groundwork for the ELK Stack setup and subsequent security monitoring.
 
-## Next Steps
-- Implement the ELK Stack and begin the process of log ingestion from the Ubuntu and Windows servers on Day 2.
+#### expected Wazuh was able to detect file creation 
+Wazuh’s ability to generate file hashes is a powerful feature for file integrity verification. By cross-referencing these hashes on platforms like VirusTotal, we can determine if a file is malicious. This feature enhances incident detection and supports quicker remediation by linking potential threats to known malware signatures.
 
-## Challenges Faced
-- Determined the optimal network architecture layout and ensured seamless integration of all components within the VPC.
+I also modified the Evil malware file and then deleted it both actions were logged by wazuh 
+<img width="1680" alt="Screenshot 2024-12-08 at 07 43 51" src="https://github.com/user-attachments/assets/3fac7c93-fddb-4db9-b90f-02e663ce9523">
+<img width="1679" alt="Screenshot 2024-12-08 at 07 47 19" src="https://github.com/user-attachments/assets/515313aa-c31e-43eb-825b-8c4ac6f053eb">
+
+
+## Conclusion 
+File Integrity Monitoring (FIM) is a critical security tool that monitors files and directories for changes, additions, or deletions. Below are the key benefits:
+
+1. Detects Unauthorized Changes
+Identifies suspicious file modifications that could indicate a breach or malware activity, such as unauthorized access or tampering with critical system files.
+2. Enhances Threat Detection
+Detects malicious activities like ransomware encrypting files or unauthorized backdoor installations in real-time, helping to mitigate risks quickly.
+3. Supports Compliance
+Assists organizations in meeting regulatory requirements like PCI DSS, HIPAA, and GDPR, which mandate monitoring and logging of file changes.
+4. Aids Incident Response
+Provides detailed logs of file changes, helping security teams analyze and respond to incidents more effectively.
+5. Increases Operational Visibility
+Monitors critical files and directories, offering insights into system and application behaviours that might otherwise go unnoticed.
+
 
